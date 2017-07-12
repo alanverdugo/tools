@@ -204,7 +204,7 @@ class AStar(object):
 
 a = AStar()
 walls = wall_list
-a.init_grid(1000, 1000, walls, (0, 0), (goal_position_x, goal_position_y))
+a.init_grid(total_rows, total_columns, walls, (0, 0), (goal_position_x, goal_position_y))
 path = a.solve()
 
 print "Solution path:", path
